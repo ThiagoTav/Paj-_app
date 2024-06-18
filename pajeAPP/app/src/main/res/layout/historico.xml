@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="65dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        android:contentDescription="v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="510dp"
+        android:layout_height="255dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-38dp"
+        tools:layout_editor_absoluteY="65dp">
+
+        <!-- Linha para Saldo Atual e Balanço Mensal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="space_between"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <!-- Saldo Atual -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:contentDescription="Saldo Atual"
+                    android:src="@drawable/SaldoAtual" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saldo Atual"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Balanço Mensal -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="-10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="90dp"
+                    android:contentDescription="Balanço Mensal"
+                    android:src="@drawable/Balanço" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Balanço Mensal"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Valores -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="space_between"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <!-- Valor do Saldo Atual -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R$ 3.500,00"
+                android:layout_marginLeft="40dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Valor do Balanço Mensal -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:text="R$ 712,00"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Título Categorias -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="Categorias"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Categorias com quadradinhos -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="-30dp"
+            android:orientation="horizontal">
+
+            <!-- Quadradinho -->
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:background="#E7A29E" />
+
+            <!-- Categoria 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Alimentação" />
+
+            <!-- Quadradinho -->
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:background="#912DBF" />
+
+            <!-- Categoria 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Transporte" />
+
+            <!-- Quadradinho -->
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:background="#EEB614" />
+
+            <!-- Categoria 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Moradia" />
+
+            <!-- Quadradinho -->
+            <View
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_marginEnd="8dp"
+                android:background="#635F5E" />
+
+            <!-- Categoria 4 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Lazer" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="665dp"
+        android:background="@drawable/rounded_bg"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="244dp">
+
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="665dp"
+            android:background="@drawable/rounded_bg"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Quinta-feira, 02 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quinta-feira, 02"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:paddingBottom="16dp" />
+
+                <!-- Transações de Quinta-feira -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:gravity="space_between">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/CircleV"
+                            android:contentDescription="Spotify"
+                            android:layout_marginEnd="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spotify"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-R$11,90"
+                        android:layout_marginLeft="160dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:gravity="space_between">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/cajuzada"
+                            android:contentDescription="Cajuzada"
+                            android:layout_marginEnd="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cajuzada"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R$616,00"
+                        android:layout_marginLeft="150dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Quarta-feira, 01 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quarta-feira, 01"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="20dp" />
+
+                <!-- Transações de Quarta-feira -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:gravity="space_between">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/academia"
+                            android:contentDescription="Academia"
+                            android:layout_marginEnd="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Academia"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-R$99,00"
+                        android:layout_marginLeft="150dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:gravity="space_between">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/salario"
+                            android:contentDescription="Salário"
+                            android:layout_marginEnd="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Salário"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R$320,00"
+                        android:textAlignment="textEnd"
+                        android:layout_marginLeft="170dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- Terça-feira, 30 -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terça-feira, 30"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="20dp" />
+
+                <!-- Transações de Terça-feira -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:gravity="space_between">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/agiota"
+                            android:contentDescription="Agiota"
+                            android:layout_marginEnd="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Agiota"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-R$3200,00"
+                        android:layout_marginLeft="160dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dp"
+                    android:gravity="space_between">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/rogerinho"
+                            android:contentDescription="Rogerinho"
+                            android:layout_marginEnd="16dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rogerinho"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-R$200,00"
+                        android:layout_marginLeft="130dp"
+                        android:textAlignment="textEnd"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="189dp"
+        android:layout_height="57dp"
+        android:text="Histórico"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

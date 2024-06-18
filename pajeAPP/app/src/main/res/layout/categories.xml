@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="65dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/abc_vector_test"
+        android:contentDescription="v"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="665dp"
+        android:background="@drawable/rounded_bg"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="244dp">>
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="665dp"
+            android:background="@drawable/rounded_bg"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <!-- LinearLayout para o texto "Nome" com imagem -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Nome"
+                    android:src="@drawable/Nome" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:text="Nome" />
+            </LinearLayout>
+
+            <!-- LinearLayout para o texto "Descrição" com imagem -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Descrição"
+                    android:src="@drawable/Descrição" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:text="Descrição" />
+            </LinearLayout>
+
+            <!-- LinearLayout para o texto "Orçamento" com imagem -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Orçamento"
+                    android:src="@drawable/Orçamento" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:text="Orçamento" />
+            </LinearLayout>
+
+            <!-- Contêiner com borda centralizado -->
+            <LinearLayout
+                android:layout_width="279dp"
+                android:layout_height="116dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/border_background"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <!-- Linha com imagem e texto "Cor" -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="99dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:contentDescription="Vector"
+                        android:src="@drawable/Vector" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cor" />
+                </LinearLayout>
+
+                <!-- Quadradinhos -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#FFFF00" />
+
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#CFCFCF" />
+
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#5A9832" />
+
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#A52A2A" />
+
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="#800080" />
+
+                    <View
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="#00FFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:contentDescription="Adicionar"
+                android:src="@drawable/SinalMais" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="189dp"
+        android:layout_height="57dp"
+        android:text="Categorias"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:text="Alimentação"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:background="#635F5E"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:background=" #912DBF"
+        tools:layout_editor_absoluteX="253dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:background="#EEB614"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="82dp"
+        android:layout_height="17dp"
+        android:text="Lazer"
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="154dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="81dp"
+        android:layout_height="22dp"
+        android:text="Transporte"
+        tools:layout_editor_absoluteX="287dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="21dp"
+        android:layout_height="20dp"
+        android:background="#E7A29E"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="119dp"
+        android:layout_height="20dp"
+        android:text="Moradia"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
